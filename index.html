@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电子商务大数据分析与智能决策支持系统</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./assets/echarts.min.js"></script>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">EB</div>
+      <div class="brand-text">
+        <h1>电商智能决策</h1>
+        <p>E-Commerce DSS</p>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a class="nav-item active" data-view="overview"><span class="nav-icon">◈</span>数据总览</a>
+      <a class="nav-item" data-view="behavior"><span class="nav-icon">◉</span>用户行为分析</a>
+      <a class="nav-item" data-view="recommend"><span class="nav-icon">★</span>智能推荐</a>
+      <a class="nav-item" data-view="forecast"><span class="nav-icon">📈</span>销量预测</a>
+      <a class="nav-item" data-view="supply"><span class="nav-icon">⚙</span>供应链风险</a>
+      <a class="nav-item" data-view="sentiment"><span class="nav-icon">💬</span>情感分析</a>
+      <a class="nav-item" data-view="marketing"><span class="nav-icon">🎯</span>营销策略</a>
+      <a class="nav-item" data-view="pricing"><span class="nav-icon">¥</span>价格优化</a>
+      <a class="nav-item" data-view="search"><span class="nav-icon">⌕</span>商品检索</a>
+    </nav>
+    <div class="sidebar-foot">
+      <p>基于 Rec-Tmall 数据集</p>
+      <p>2026 大数据应用设计</p>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div class="page-title" id="pageTitle">数据总览</div>
+      <div class="topbar-right">
+        <span class="badge" id="sysStatus">● 演示版运行中</span>
+        <span class="time" id="clock"></span>
+      </div>
+    </header>
+    <div class="content" id="content"></div>
+  </main>
+</div>
+<script src="./js/app.js"></script>
+</body>
+</html>
